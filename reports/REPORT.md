@@ -1,6 +1,6 @@
 # Báo cáo Ngày 4 - Keypoint & Pose
 
-Họ tên: ______   Nhóm: ______   Ngày: ______
+Họ tên: Nguyễn Vũ Quang Minh   Nhóm: Không có tên   Ngày: 16/09/2026
 
 > Cách dùng: copy file này thành `reports/REPORT.md`. Điền bằng số liệu do công cụ sinh ra;
 > không tự ước lượng hoặc sửa số trong file JSON.
@@ -11,23 +11,42 @@ Họ tên: ______   Nhóm: ______   Ngày: ______
 Số ảnh phải là 20; số skeleton là tổng số người trong 20 ảnh. Thời gian trung bình = tổng
 thời gian gán / 20. -->
 
+| # | Khớp | v=2 | v=1 | v=0 | %v=1 |
+| ---: | --- | ---: | ---: | ---: | ---: |
+| 0 | nose | 24 | 1 | 4 | 3% |
+| 1 | left_eye | 20 | 3 | 6 | 10% |
+| 2 | right_eye | 23 | 1 | 5 | 3% |
+| 3 | left_ear | 13 | 12 | 4 | 41% |
+| 4 | right_ear | 21 | 6 | 2 | 21% |
+| 5 | left_shoulder | 25 | 4 | 0 | 14% |
+| 6 | right_shoulder | 28 | 1 | 0 | 3% |
+| 7 | left_elbow | 24 | 4 | 1 | 14% |
+| 8 | right_elbow | 24 | 5 | 0 | 17% |
+| 9 | left_wrist | 19 | 8 | 2 | 28% |
+| 10 | right_wrist | 19 | 7 | 3 | 24% |
+| 11 | left_hip | 18 | 10 | 1 | 34% |
+| 12 | right_hip | 22 | 6 | 1 | 21% |
+| 13 | left_knee | 17 | 5 | 7 | 17% |
+| 14 | right_knee | 16 | 6 | 7 | 21% |
+| 15 | left_ankle | 14 | 6 | 9 | 21% |
+| 16 | right_ankle | 14 | 6 | 9 | 21% |
+
 | Chỉ số | Giá trị |
 | --- | ---: |
-| Số ảnh đã gán | |
-| Số skeleton | |
-| v=2 / v=1 / v=0 | |
-| Thời gian trung bình mỗi ảnh | |
+| Số ảnh đã gán | 20 |
+| Số skeleton | 29 |
+| v=2 / v=1 / v=0 |  |
+| Thời gian trung bình mỗi ảnh | 4 |
 
 Ba khớp có `%v=1` cao nhất (chép từ `reports/visibility_report.md`):
 
-1.
-2.
-3.
+1. left_ear
+2. left_hip
+3. left_wrist
 
 Chúng có đúng là những khớp bạn thấy khó gán nhất không? Nếu không, giải thích.
 
-<!-- Trả lời 2–4 câu. Phân biệt “hay bị che” với “khó xác định vị trí giải phẫu”; nêu bằng
-chứng nhìn thấy thay vì chỉ nêu cảm giác. -->
+Vì khớp nhỏ và dễ bị che khuất sau vật thể khác nên đúng, là những vật thể này khá là khó gán.
 
 ## 2. Chấm với gold
 
